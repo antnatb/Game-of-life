@@ -12,7 +12,7 @@ using namespace std;
 
 class Cell {
 public:
-    Cell(int x, int y, float s);
+    Cell(int x, int y, float s, bool m);
     ~Cell() = default;
 
     bool isAlive() const{
@@ -20,6 +20,10 @@ public:
     }
     void setAlive(bool a){
         alive = a;
+    }
+
+    void setAge(int a){
+        age = a;
     }
 
     int getPosX() const {
@@ -46,6 +50,10 @@ private:
     float side;
     vector<Cell*> neighbors = {};
     int aliveNeighbors = 0;
+    int age = 0;
+    static const int maxAge = 4;
+    bool ageModifier;
+    float deathChance = 0.001;
 
 };
 

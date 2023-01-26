@@ -3,7 +3,7 @@
 
 
 int main() {
-    Grid myGrid(320, 180);
+    Grid myGrid(240, 135, true);
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Game of Life", sf::Style::Fullscreen);
 

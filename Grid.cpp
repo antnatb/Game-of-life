@@ -7,15 +7,18 @@
 
 
 
-Grid::Grid(int x, int y): width(x), height(y) {
+Grid::Grid(int x, int y, bool m): width(x), height(y), ageModifier(m) {
     srand(time(nullptr));
     cellSide = int (sf::VideoMode::getDesktopMode().width) / x;
     for (int i = 0; i < width; i++) {
         cells.emplace_back();
         for (int j = 0; j < height; j++){
-            Cell cell(i * cellSide, j * cellSide, float(cellSide));
-            if ((static_cast <float> (rand()) / static_cast <float> (RAND_MAX)) <= lifeChance)
+            Cell cell(i * cellSide, j * cellSide, float(cellSide), ageModifier);
+            if ((static_cast <float> (rand()) / static_cast <float> (RAND_MAX)) <= lifeChance) {
                 cell.setAlive(true);
+                if (ageModifier)
+                    cell.setAge(0);
+            }
             cells[i].push_back(cell);
         }
     }
