@@ -51,7 +51,7 @@ private:
     vector<Cell*> neighbors = {};
     int aliveNeighbors = 0;
     int age = 0;
-    static const int maxAge = 4;
+    static const int maxAge = 3;
     bool ageModifier;
     float deathChance = 0.001;
 

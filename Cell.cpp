@@ -34,9 +34,6 @@ void Cell::draw(sf::RenderWindow &window) {
                 case 3:
                     color = sf::Color{255, 204, 0}; // dark yellow
                     break;
-                case 4:
-                    color = sf::Color{255, 153, 51}; // light orange
-                    break;
             }
             shape.setFillColor(color);
         } else

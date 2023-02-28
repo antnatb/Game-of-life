@@ -3,11 +3,13 @@
 
 
 int main() {
-    Grid myGrid(240, 135, true);
+    Grid myGrid(320, 180, false);
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Game of Life", sf::Style::Fullscreen);
 
     sf::Event event{};
+
+    sf::Clock clock;
 
 
     while (window.isOpen()) {
@@ -26,5 +28,8 @@ int main() {
         myGrid.update();
         myGrid.draw(window);
         window.display();
+        /* if(clock.getElapsedTime().asSeconds() < float(1) / float(20))
+            sf::sleep(sf::seconds(float(1) / float(20) - clock.getElapsedTime().asSeconds()));
+        clock.restart(); */
     }
 }
