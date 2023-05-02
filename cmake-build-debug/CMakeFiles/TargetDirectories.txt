@@ -1,4 +1,0 @@
-C:/Users/anton/Desktop/Progetti C++/Game of Life/cmake-build-debug/CMakeFiles/core.dir
-C:/Users/anton/Desktop/Progetti C++/Game of Life/cmake-build-debug/CMakeFiles/Game_of_Life.dir
-C:/Users/anton/Desktop/Progetti C++/Game of Life/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/anton/Desktop/Progetti C++/Game of Life/cmake-build-debug/CMakeFiles/rebuild_cache.dir

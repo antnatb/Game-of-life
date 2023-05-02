@@ -1,5 +1,0 @@
-C:\Users\anton\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Users\anton\Desktop\Progetti C++\Game of Life" -B "C:\Users\anton\Desktop\Progetti C++\Game of Life\cmake-build-debug"
--- Found SFML 2.5.1 in C:/Users/anton/Desktop/Progetti C++/Game of Life/SFML/lib/cmake/SFML
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/anton/Desktop/Progetti C++/Game of Life/cmake-build-debug
