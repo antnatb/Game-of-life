@@ -3,16 +3,12 @@
 
 
 int main() {
-    Grid myGrid(240, 135, true, false);
+    Grid myGrid(240, 135, false, true);
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Game of Life", sf::Style::Fullscreen);
-
     window.setFramerateLimit(30);
 
     sf::Event event{};
-
-    sf::Clock clock;
-
 
     while (window.isOpen()) {
         while (window.pollEvent(event)) {

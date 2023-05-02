@@ -6,8 +6,12 @@
 #include "random"
 
 
+Grid::Grid(int x, int y): Grid(x, y, false, false){} //default constructor
 
 Grid::Grid(int x, int y, bool m, bool c): width(x), height(y), ageModifier(m), colorModifier(c) {
+    if (m && c){
+        throw std::invalid_argument("You can only select one modifier");
+    }
     srand(time(nullptr));
     cellSide = int (sf::VideoMode::getDesktopMode().width) / x;
     for (int i = 0; i < width; i++) {

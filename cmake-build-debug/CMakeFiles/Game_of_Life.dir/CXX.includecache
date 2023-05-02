@@ -6,23 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/anton/Desktop/Progetti C++/Game of Life/Cell.cpp
-iostream
--
-Cell.h
-C:/Users/anton/Desktop/Progetti C++/Game of Life/Cell.h
-
 C:/Users/anton/Desktop/Progetti C++/Game of Life/Cell.h
 vector
 C:/Users/anton/Desktop/Progetti C++/Game of Life/vector
 SFML/Graphics.hpp
 C:/Users/anton/Desktop/Progetti C++/Game of Life/SFML/Graphics.hpp
-
-C:/Users/anton/Desktop/Progetti C++/Game of Life/Grid.cpp
-Grid.h
-C:/Users/anton/Desktop/Progetti C++/Game of Life/Grid.h
-random
-C:/Users/anton/Desktop/Progetti C++/Game of Life/random
 
 C:/Users/anton/Desktop/Progetti C++/Game of Life/Grid.h
 Cell.h

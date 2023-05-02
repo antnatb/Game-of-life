@@ -10,6 +10,8 @@
 
 class Grid {
 public:
+
+    Grid(int x, int y);
     Grid(int x, int y, bool m, bool c);
     ~Grid() = default;
 
