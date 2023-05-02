@@ -12,7 +12,7 @@ using namespace std;
 
 class Cell {
 public:
-    Cell(int x, int y, float s, bool m);
+    Cell(int x, int y, float s, bool m, bool c);
     ~Cell() = default;
 
     bool isAlive() const{
@@ -37,7 +37,13 @@ public:
     void countAliveNeighbors();
     void updateStatus();
 
+    void setColor(int red, int green, int blue);
 
+    int getR() const;
+
+    int getG() const;
+
+    int getB() const;
 
 
     void draw(sf::RenderWindow &window);
@@ -49,11 +55,17 @@ private:
     int posX, posY;
     float side;
     vector<Cell*> neighbors = {};
-    int aliveNeighbors = 0;
+    int aliveNeighborsCount = 0;
     int age = 0;
     static const int maxAge = 3;
     bool ageModifier;
+    bool colorModifier;
     float deathChance = 0.001;
+    int R;
+    int G;
+    int B;
+    vector<Cell*> aliveNeighbors = {nullptr, nullptr, nullptr};
+
 
 };
 

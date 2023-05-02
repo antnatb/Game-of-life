@@ -10,7 +10,7 @@
 
 class Grid {
 public:
-    Grid(int x, int y, bool m);
+    Grid(int x, int y, bool m, bool c);
     ~Grid() = default;
 
     void addNeighbors();
@@ -25,5 +25,6 @@ private:
     vector<vector<Cell>> cells;
     float lifeChance = 0.1;
     bool ageModifier;
+    bool colorModifier;
 };
 #endif //GAME_OF_LIFE_GRID_H
