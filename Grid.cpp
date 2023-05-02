@@ -37,29 +37,21 @@ void Grid::addNeighbors() {
             int x = cell.getPosX() / cellSide;
             int y = cell.getPosY() / cellSide;
             //left
-            if (x - 1 >= 0)
-                cell.addNeighbor(cells[x - 1][y]);
+            cell.addNeighbor(cells[(x + width - 1) % width][y]);
             //top left
-            if (x - 1 >= 0 && y + 1 < height)
-                cell.addNeighbor(cells[x - 1][y + 1]);
+            cell.addNeighbor(cells[(x + width - 1) % width][(y + height + 1) % height]);
             //top
-            if (y + 1 < height)
-                cell.addNeighbor(cells[x][y + 1]);
+            cell.addNeighbor(cells[x][(y + height + 1) % height]);
             //top right
-            if (x + 1 < width && y + 1 < height)
-                cell.addNeighbor(cells[x + 1][y + 1]);
+            cell.addNeighbor(cells[(x + 1) % width][(y + height + 1) % height]);
             //right
-            if (x + 1 < width)
-                cell.addNeighbor(cells[x + 1][y]);
+            cell.addNeighbor(cells[(x + 1) % width][y]);
             //bottom right
-            if (x + 1 < width && y - 1 >= 0)
-                cell.addNeighbor(cells[x + 1][y - 1]);
+            cell.addNeighbor(cells[(x + 1) % width][(y + height - 1) % height]);
             //bottom
-            if (y - 1 >= 0)
-                cell.addNeighbor(cells[x][y - 1]);
+            cell.addNeighbor(cells[x][(y + height - 1) % height]);
             //bottom left
-            if (x - 1 >= 0 && y - 1 >= 0)
-                cell.addNeighbor(cells[x - 1][y - 1]);
+            cell.addNeighbor(cells[(x + width - 1) % width][(y + height - 1) % height]);
         }
 }
 
