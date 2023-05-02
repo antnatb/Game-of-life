@@ -21,3 +21,5 @@ This version features a standard mode (basically the traditional Game of Life) a
    the 3 alive cells that caused its birth. The rules of the Game stay the same.
 
 This project was written in C++ using the SFML graphic library.
+
+INSTRUCTIONS: Once you click 'Run', the grid automatically creates and starts evolving on its own. Press 'Esc' to close the window.
